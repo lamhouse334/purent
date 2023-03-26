@@ -593,7 +593,7 @@ section {
 .hero-animated p {
   color: rgba(var(--color-secondary-rgb), 0.8);
   margin: 0 0 30px 0;
-  font-size: 30px;
+  font-size: 21px;
   font-weight: 600;
 }
 
@@ -605,6 +605,12 @@ section {
 @media (min-width: 992px) {
   .hero-animated .animated {
     max-width: 45%;
+  }
+  .hero-animated p {
+    color: rgba(var(--color-secondary-rgb), 0.8);
+    margin: 0 0 30px 0;
+    font-size: 21px;
+    font-weight: 600;
   }
 }
 
@@ -618,6 +624,12 @@ section {
   .hero-animated .animated {
     max-width: 80%;
   }
+  .hero-animated p {
+    color: rgba(var(--color-secondary-rgb), 0.8);
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    font-weight: 600;    
+    }  
 }
 
 .hero-animated .btn-get-started {
@@ -1187,6 +1199,10 @@ section {
   position: relative;
   margin: 60px 0 0 60px;
 }
+.about img{
+  width:100%;
+  padding:0;
+}
 
 .about .about-img:before {
   position: absolute;
@@ -1424,6 +1440,29 @@ section {
   .onfocus .content {
     padding: 80px;
   }
+  .onfocus img{
+    width:100%;
+    height:auto;
+  }
+  
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .onfocus .content {
+    padding: 10px;
+  }
+  .onfocus img{
+    width:100%;
+    height:auto;
+  }
+  .onfocus .speci{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    height:50px;  
+    width:360px;
+    font-size: smaller;
+  }
 }
 
 .onfocus .content h3 {
@@ -1576,21 +1615,28 @@ section {
   font-size: 16px;
 }
 
-
+.hspeci img{
+  width:100%;
+  height:auto;
+}
 
 
 .hspeci .speci{
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
+ 
+  border-width: 1px; 
   height:35px;
   padding:5px;
 }
 
 @media (min-width: 768px) {
   .hspeci .content {
-    padding: 80px;
+    padding: 10px;
   }
+  .hspeci img{
+    width:100%;
+    height:auto;
+  }
+  
 }
 
 .hspeci .content h3 {
@@ -1600,7 +1646,7 @@ section {
 }
 
 .hspeci .content ul {
-  list-style: none;
+  list-style:circle;
   padding: 0;
 }
 
@@ -1608,11 +1654,7 @@ section {
   padding-bottom: 10px;
 }
 
-.hspeci .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: var(--color-primary);
-}
+
 
 .hspeci .content p:last-child {
   margin-bottom: 0;
