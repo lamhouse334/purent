@@ -1434,11 +1434,12 @@ section {
   border-color: white;
   height:35px;
   padding:5px;
+  font-size:14px;
 }
 
 @media (min-width: 768px) {
   .onfocus .content {
-    padding: 80px;
+    padding: 10px;
   }
   .onfocus img{
     width:100%;
@@ -1460,7 +1461,7 @@ section {
     border-width: 1px;
     border-color: white;
     height:50px;  
-    width:360px;
+    width:100%;
     font-size: smaller;
   }
 }
