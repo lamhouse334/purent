@@ -24,7 +24,9 @@ h6 {
   font-family: var(--font-primary);
 }
 
-
+ul li {
+  list-style-type: none;
+}
 
 /*--------------------------------------------------------------
 # Preloader
