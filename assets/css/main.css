@@ -571,7 +571,6 @@ section {
 --------------------------------------------------------------*/
 .hero-animated {
   width: 100%;
-  min-height: 50vh;
   background: url("../img/hero-bg.png") center center;
   background-size: cover;
   position: relative;
@@ -604,8 +603,9 @@ section {
 
 @media (min-width: 992px) {
   .hero-animated .animated {
-    max-width: 45%;
+    max-width: 100%;
   }
+
   .hero-animated p {
     color: rgba(var(--color-secondary-rgb), 0.8);
     margin: 0 0 30px 0;
@@ -616,20 +616,21 @@ section {
 
 @media (max-width: 991px) {
   .hero-animated .animated {
-    max-width: 60%;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 575px) {
   .hero-animated .animated {
-    max-width: 80%;
+    max-width: 100%;
   }
+
   .hero-animated p {
     color: rgba(var(--color-secondary-rgb), 0.8);
     margin: 0 0 30px 0;
     font-size: 16px;
-    font-weight: 600;    
-    }  
+    font-weight: 600;
+  }
 }
 
 .hero-animated .btn-get-started {
@@ -1149,13 +1150,13 @@ section {
   padding: 30px;
   transition: all ease-in-out 0.4s;
   background: var(--color-white);
-  height: 100%;  
+  height: 100%;
 
 }
 
 .featured-services .service-item .icon {
-  margin-bottom: 10px; 
- margin-left: 50%;
+  margin-bottom: 10px;
+  margin-left: 50%;
 }
 
 .featured-services .service-item .icon i {
@@ -1168,8 +1169,8 @@ section {
   font-weight: 600;
   margin-bottom: 15px;
   font-size: 30px;
-  margin-left:45%;
-  
+  margin-left: 45%;
+
 }
 
 .featured-services .service-item h4 a {
@@ -1180,7 +1181,7 @@ section {
 .featured-services .service-item p {
   line-height: 24px;
   font-size: 14px;
-  text-align: center;  
+  text-align: center;
 }
 
 .featured-services .service-item:hover {
@@ -1199,9 +1200,10 @@ section {
   position: relative;
   margin: 60px 0 0 60px;
 }
-.about img{
-  width:100%;
-  padding:0;
+
+.about img {
+  width: 100%;
+  padding: 0;
 }
 
 .about .about-img:before {
@@ -1212,6 +1214,7 @@ section {
   background: url("../img/about-bg.png") top left;
   background-repeat: no-repeat;
 }
+
 .about .btn-getstarted,
 .about .btn-getstarted:focus {
   font-size: 16px;
@@ -1428,40 +1431,43 @@ section {
   padding: 40px;
 }
 
-.onfocus .speci{
+.onfocus .speci {
   border-style: solid;
   border-width: 1px;
   border-color: white;
-  height:35px;
-  padding:5px;
-  font-size:14px;
+  height: 35px;
+  padding: 5px;
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
   .onfocus .content {
     padding: 10px;
   }
-  .onfocus img{
-    width:100%;
-    height:auto;
+
+  .onfocus img {
+    width: 100%;
+    height: auto;
   }
-  
+
 }
 
 @media (min-width: 360px) and (max-width: 768px) {
   .onfocus .content {
     padding: 10px;
   }
-  .onfocus img{
-    width:100%;
-    height:auto;
+
+  .onfocus img {
+    width: 100%;
+    height: auto;
   }
-  .onfocus .speci{
+
+  .onfocus .speci {
     border-style: solid;
     border-width: 1px;
     border-color: white;
-    height:50px;  
-    width:100%;
+    height: 50px;
+    width: 100%;
     font-size: smaller;
   }
 }
@@ -1602,42 +1608,43 @@ section {
   padding: 25px;
 }
 
-.hspeci .section-title { 
-  margin:25px 0 0 0;
+.hspeci .section-title {
+  margin: 25px 0 0 0;
 }
 
-.hspeci .section-title h3{
+.hspeci .section-title h3 {
   font-weight: 700;
   font-size: 32px;
 }
 
-.hspeci .section-title p{
+.hspeci .section-title p {
   font-weight: 500;
   font-size: 16px;
 }
 
-.hspeci img{
-  width:100%;
-  height:auto;
+.hspeci img {
+  width: 100%;
+  height: auto;
 }
 
 
-.hspeci .speci{
- 
-  border-width: 1px; 
-  height:35px;
-  padding:5px;
+.hspeci .speci {
+
+  border-width: 1px;
+  height: 35px;
+  padding: 5px;
 }
 
 @media (min-width: 768px) {
   .hspeci .content {
     padding: 10px;
   }
-  .hspeci img{
-    width:100%;
-    height:auto;
+
+  .hspeci img {
+    width: 100%;
+    height: auto;
   }
-  
+
 }
 
 .hspeci .content h3 {
@@ -1647,7 +1654,7 @@ section {
 }
 
 .hspeci .content ul {
-  list-style:circle;
+  list-style: circle;
   padding: 0;
 }
 
@@ -1901,7 +1908,7 @@ section {
 .services .details {
   padding: 50px 30px;
   margin: -100px 30px 0 30px;
-  height:300px;
+  height: 300px;
   transition: all ease-in-out 0.3s;
   background: var(--color-white);
   position: relative;
@@ -1913,8 +1920,8 @@ section {
 
 .services .hdetails {
   padding: 50px 30px;
-  margin: -100px 30px 0 30px; 
-  transition: all ease-in-out 0.3s;  
+  margin: -100px 30px 0 30px;
+  transition: all ease-in-out 0.3s;
   position: relative;
   background: rgba(var(--color-white-rgb), 0.9);
   text-align: center;
@@ -1940,6 +1947,7 @@ section {
   left: calc(50% - 36px);
   border: 6px solid var(--color-white);
 }
+
 .services .hdetails h3 {
   color: var(--color-default);
   font-weight: 700;
@@ -1947,12 +1955,13 @@ section {
   font-size: 18px;
   transition: ease-in-out 0.3s;
 }
+
 .services .hdetails p {
   line-height: 27px;
   font-size: 14px;
   margin-bottom: 0;
-  margin-top:3px;
-  padding:10px 0 0 0;
+  margin-top: 3px;
+  padding: 10px 0 0 0;
 }
 
 .services .service-item:hover .hdetails h3 {
@@ -2002,8 +2011,8 @@ section {
   line-height: 27px;
   font-size: 14px;
   margin-bottom: 0;
-  margin-top:3px;
-  padding:10px 0 0 0;
+  margin-top: 3px;
+  padding: 10px 0 0 0;
 }
 
 .services .service-item:hover .details h3 {
@@ -2108,8 +2117,8 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   font-weight: bold;
-  font-size:xx-large;
-  margin: 0 auto 15px auto; 
+  font-size: xx-large;
+  margin: 0 auto 15px auto;
 
 }
 
@@ -2167,7 +2176,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 36px;
-  
+
 }
 
 .pricing h4 {
@@ -3591,14 +3600,17 @@ section {
   background-color: #51be78;
   border-color: #51be78;
 }
+
 .btn-success:hover {
   background-color: #51be78 !important;
   border-color: #51be78 !important;
 }
+
 .btn-success:active {
   background-color: #51be78 !important;
   border-color: #51be78 !important;
 }
+
 .btn-success:focus {
   background-color: #51be78 !important;
   border-color: #51be78 !important;
@@ -3609,14 +3621,17 @@ section {
   background-color: #1690f0;
   border-color: #1690f0;
 }
+
 .btn-primary:hover {
   background-color: #1690f0 !important;
   border-color: #1690f0 !important;
 }
+
 .btn-primary:active {
   background-color: #1690f0 !important;
   border-color: #1690f0 !important;
 }
+
 .btn-primary:focus {
   background-color: #1690f0 !important;
   border-color: #1690f0 !important;
@@ -3627,14 +3642,17 @@ section {
   border-color: #1690f0;
   color: #1690f0;
 }
+
 .btn-outline-primary:hover {
   background-color: #1690f0 !important;
   border-color: #1690f0 !important;
 }
+
 .btn-outline-primary:active {
   background-color: #1690f0 !important;
   border-color: #1690f0 !important;
 }
+
 .btn-outline-primary:focus {
   background-color: #1690f0 !important;
   border-color: #1690f0 !important;
@@ -3664,6 +3682,7 @@ section {
   background-color: #F8F8F8;
   margin-bottom: 20px;
 }
+
 .form-control:focus {
   background-color: #FFF;
   border-color: #CCC;
@@ -3677,6 +3696,7 @@ section {
   .nacul {
     width: 100%;
   }
+
   .nacul li {
     width: 100%;
   }
@@ -3686,7 +3706,7 @@ section {
   }
 }
 
-.col-centered{
+.col-centered {
   float: none;
   margin: 0 auto;
 }
